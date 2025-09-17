@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejashwi Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hidden-section {
+            display: none;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 3s ease-out forwards;
+        }
+         html {
+      scroll-behavior: smooth; /* Smooth scroll */
+    }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+   <header class="bg-white shadow-md fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img src="logo.png.jpg.png" alt="Tejashwi Tech Logo" class="w-16 h-16 rounded-full">
+      <span class="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 font-serif">
+        TEJASHWI TECHNOLOGIES
+      </span>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="flex space-x-4 text-gray-700 font-medium items-center">
+  <a href="https://astrochart-generator-production.up.railway.app/" target="_blank"
+     class="bg-yellow-500 text-white px-8 py-3 rounded-full font-semibold text-2xl shadow-md hover:bg-red-900 transition">
+     ASTRO
+  </a>
+</nav>
+
+
+      <a href="#home" class="hover:text-blue-500">Home</a>
+      <div class="relative group">
+        <a href="#services" class="hover:text-blue-500">Services</a>
+        <div class="absolute hidden group-hover:block bg-white shadow-lg py-2 mt-2 space-y-2 rounded-md w-48">
+          <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Web Development</a>
+          <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">App Development</a>
+          <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Financial Astrology</a>
+          <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Algo-trade Platform</a>
+        </div>
+      </div>
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </nav>
+
+    <!-- Mobile Hamburger -->
+    <button id="menu-btn" class="md:hidden flex items-center px-3 py-2 border rounded text-gray-700 border-gray-400 hover:text-blue-500">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+    <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Home</a>
+    <a href="#services" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Services</a>
+    <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">About</a>
+    <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact</a>
+  </div>
+</header>
+
+<!-- home -->
+    <section id="home" data-section="home" class="relative h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden">
+       <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+    <source src="video.mp4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+        <div class="absolute top-0 left-0 w-full h-full bg-black/50"></div>
+        <div class="relative z-10 text-center">
+            <h1 class="text-5xl font-bold mb-4 animate-fadeInUp">Welcome to MyCompany</h1>
+            <p class="text-lg mb-6">We provide innovative services to help your business grow.</p>
+            <a href="#services" id="explore-btn"
+   class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">
+   Explore Services
+</a>
+
+        </div>
+    </section>
+
+    <!-- services -->
+    <section id="services" data-section="services" class="py-72  min-h-screen text-center hidden-section" style="background-image: url('https://img.freepik.com/premium-vector/white-background-with-blue-technology-circuit_583398-369.jpg?w=2000');">
+  <h2 class="text-5xl font-bold text-black-800 mb-10">Our Services</h2>
+
+  <!-- 3-column grid for first row -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
+
+    <!-- Web Development -->
+    <div class="bg-blue-10 p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-2xl font-semibold mb-3">Web Development</h3>
+      <p class="text-black-600 text-justify text-xl">
+        <i>We create modern and responsive websites that look great on all devices, from mobiles to desktops. 
+        Our designs are simple, professional, and easy to navigate, helping your business stand out online. 
+        With the right mix of style and functionality, we ensure your website attracts visitors and builds trust.</i>
+      </p>
+      <ul class="list-disc list-inside text-left text-black-600 text-lg mt-4">
+        <li>Business Websites & Portfolios</li>
+        <li>E-commerce Development</li>
+        <li>Custom Web Applications</li>
+        <li>CMS Development</li>
+        <li>UI/UX Design</li>
+        <li>API Development & Integration</li>
+        <li>Website Maintenance & Support</li>
+      </ul>
+    </div>
+
+    <!-- App Development -->
+    <div class="bg-blue-10 p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-2xl font-semibold mb-3">App Development</h3>
+      <p class="text-black-600 text-justify text-xl">
+        <i>We build mobile apps that are fast, reliable, and easy to use. Our focus is on performance and smooth navigation so users can enjoy a hassle-free experience. Whether for Android or iOS, our apps are designed to meet your business goals and keep customers engaged anytime, anywhere.</i>
+      </p>
+      <ul class="list-disc list-inside text-left text-black-600 text-lg mt-4">
+        <li>Mobile App Development</li>
+        <li>Progressive Web Apps</li>
+        <li>Custom Enterprise Apps</li>
+        <li>E-commerce & On-Demand Apps</li>
+        <li>Fintech & Payment Apps</li>
+        <li>App Testing & Maintenance</li>
+      </ul>
+    </div>
+
+    <!-- Financial Astrology (will stay on the right) -->
+    <div class="bg-blue-10 p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-2xl font-semibold mb-3">Financial Astrology</h3>
+      <p class="text-black-600 text-justify text-xl">
+        <i>Financial astrology uses planetary movements and astrological principles to forecast market trends, investor behavior, and economic cycles, aiming to identify opportunities, risks, and timing for profitable financial decisions.</i>
+      </p>
+      <ul class="list-disc list-inside text-left text-black-600 text-lg mt-4">
+        <li>Stock Market Predictions</li>
+        <li>Personal Investment Guidance</li>
+        <li>Business Forecasting</li>
+        <li>Market Timing Solutions</li>
+        <li>Workshops & Training</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Second row for Algo-trade Platform, centered -->
+  <div class="flex justify-center mt-8 px-4">
+    <div class="bg-blue-10 p-6 rounded-2xl shadow hover:shadow-lg transition w-full md:w-1/4">
+      <h3 class="text-2xl font-semibold mb-3 text-center">Algo-trade Platform</h3>
+      <p class="text-black-600 text-justify text-xl">
+        <i>We provide an algorithmic trading platform that empowers traders and investors with automated strategies, real-time market analysis, and seamless trade execution. Our technology-driven solutions enhance speed, accuracy, and efficiency in financial markets.</i>
+      </p>
+      <ul class="list-disc list-inside text-left text-black-600 text-lg mt-4">
+        <li>Algorithmic Trading with Astrology</li>
+        <li>Astro-Trading Software</li>
+        <li>Live Market Predictions</li>
+        <li>Custom Dashboard Development</li>
+        <li>Integration with Brokers/Exchanges</li>
+        <li>Analytics & Reporting Tools</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <!-- about -->
+    <section id="about" data-section="about" class="py-72  min-h-screen text-center hidden-section" style="background-image: url('https://wallpaperaccess.com/full/3514961.png');">
+        <h2 class="text-5xl font-bold text-black-800 mb-6">About Us</h2>
+        <p class="max-w-2xl mx-auto text-black-600 text-justify text-xl">
+            <i>Our company is a fast-growing tech firm dedicated to delivering innovative digital solutions that empower businesses and individuals alike. We specialize in web development and app development, creating responsive, user-friendly platforms that help brands connect with their audience in meaningful ways. In addition to technology services, we offer unique expertise in financial astrology, combining modern data-driven insights with ancient wisdom to provide guidance for smarter financial decision-making. With a commitment to creativity, precision, and growth, we aim to be a trusted partner for clients navigating the digital and financial landscapes of the future.</i>
+        </p>
+        <img src="logo.png.jpg.png"alt="Company Logo" class="w-48 h-48 mx-auto mt-8 rounded-full">
+    </section>
+
+    <!-- contact -->
+    <section id="contact" data-section="contact" class="py-20 min-h-screen bg-gray-100 text-center hidden-section" style="background-image: url('https://img.freepik.com/premium-vector/white-background-with-blue-technology-circuit_583398-369.jpg');">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                We'd love to hear from you! Reach out for any inquiries or collaborations.
+            </p>
+            <div class="space-y-4 text-lg text-gray-700 mb-10">
+                <p><strong>📍 Address:</strong> 101, Amrit Chambers, Scindia House, KG Marg, New Delhi-110001</p>
+                <p><strong>📞 Phone:</strong> +91 92115 19286</p>
+                <p><strong>✉️ Email:</strong> info@crestview.co.in</p>
+            </div>
+            <form id="contact-form" class="space-y-4">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded-lg" required>
+                <select name="client_type" class="w-full p-3 border rounded-lg" required>
+                    <option value="" disabled selected>Select Type</option>
+                    <option value="Individual">Individual</option>
+                    <option value="Corporate">Corporate</option>
+                </select>
+                <input type="tel" name="phone" placeholder="Your Phone Number" class="w-full p-3 border rounded-lg" required>
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" required>
+                <div class="text-left">
+                    <p class="mb-2 font-semibold">Select your query:</p>
+                    <label class="inline-flex items-center mr-4">
+                        <input type="checkbox" name="query" value="Web Development" class="form-checkbox">
+                        <span class="ml-2">Web Development</span>
+                    </label>
+                    <label class="inline-flex items-center mr-4">
+                        <input type="checkbox" name="query" value="App Development" class="form-checkbox">
+                        <span class="ml-2">App Development</span>
+                    </label>
+                    <label class="inline-flex items-center mr-4">
+                        <input type="checkbox" name="query" value="Financial Astrology" class="form-checkbox">
+                        <span class="ml-2">Financial Astrology</span>
+                    </label>
+                    <label class="inline-flex items-center mr-4">
+                        <input type="checkbox" name="query" value="Algo-trade Platform" class="form-checkbox">
+                        <span class="ml-2">Algo-trade Platform</span>
+                    </label>
+                </div>
+                <textarea name="message" placeholder="Your Message" rows="4" class="w-full p-3 border rounded-lg" required></textarea>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2025 MyCompany. All rights reserved.</p>
+    </footer>
+
+   <!-- Scripts -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+    mobileMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+    });
+
+    emailjs.init({ publicKey: "fF0hghLMzqDkDFYsc" });
+
+    const navLinks = document.querySelectorAll('nav a[href^="#"], #mobile-menu a[href^="#"]');
+    const sections = document.querySelectorAll('section[data-section]');
+    const exploreBtn = document.getElementById('explore-btn');
+
+    function showSection(targetSectionId) {
+        sections.forEach(section => {
+            section.id === targetSectionId.slice(1) ? section.classList.remove('hidden-section') : section.classList.add('hidden-section');
+        });
+        const targetElement = document.querySelector(targetSectionId);
+        if (targetElement) targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' }); // ✅ change
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            showSection(this.getAttribute('href'));
+        });
+    });
+
+    if (exploreBtn) {
+        exploreBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            showSection('#services');
+        });
+    }
+
+    // Initial section
+    const initialSectionId = window.location.hash || '#home';
+    showSection(initialSectionId);
+});
+</script>
+</body>
+</html>
